@@ -52,12 +52,20 @@ namespace Segundo_Exercicio_Prova_do_Djalma
 
             }
             int mes, dia, ano;
-            string mesextenso = null;
-            Console.WriteLine("Digite uma Data ");
+            Console.WriteLine("Digite uma Data  (dd/mm/aaaa):");
             var dataatual = Convert.ToDateTime(Console.ReadLine());
             mes = dataatual.Month;
             dia = dataatual.Day;
             ano = dataatual.Year;
+
+            string datadesejada = Dataextenso(mes);
+            Console.WriteLine(cidade + "," + dia + " de " + datadesejada + " de " + ano);
+
+            Console.ReadKey();
+        }
+        static public string Dataextenso(int mes)
+        {
+            string mesextenso = null;
             switch (mes)
 
             {
@@ -111,19 +119,14 @@ namespace Segundo_Exercicio_Prova_do_Djalma
 
 
             }
+            string dataconvertida = mesextenso;
 
+            return dataconvertida;
 
-
-            ExibirMensagem(cidade+","+dia+"de"+mesextenso+"de"+ano);
-
-            Console.ReadKey();
-
-        }
-        static void ExibirMensagem(string texto)
-        {
             
-            Console.WriteLine(texto);
-
+            
+            
+            
         }
 
 
