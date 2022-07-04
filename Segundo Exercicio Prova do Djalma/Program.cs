@@ -106,7 +106,7 @@ namespace Segundo_Exercicio_Prova_do_Djalma
                     break;
 
                 case 10:
-                    mesextenso = "Otubro";
+                    mesextenso = "Outubro";
                     break;
 
                 case 11:
